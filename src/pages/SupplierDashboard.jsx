@@ -93,16 +93,22 @@ function SupplierDashboard() {
               전자인수증 발행 첫 페이지 화면과<br/>발행 내용을 확인해주세요!
             </h3>
             
-            {/* 알림톡 디자인 iframe 미리보기 */}
-            <div style={{ 
-              width: '100%', height: '400px', margin: '1rem 0', borderRadius: '12px', 
-              border: '8px solid #374151', overflow: 'hidden', backgroundColor: '#f3f4f6' 
-            }}>
-              <iframe 
-                src="https://trusteel.lovable.app/" 
-                style={{ width: '100%', height: '100%', border: 'none' }}
-                title="알림톡 디자인 미리보기"
-              />
+            {/* 알림톡 디자인 새창 열기 버튼 */}
+            <div style={{ margin: '1.5rem 0', textAlign: 'center' }}>
+              <button 
+                type="button" 
+                onClick={() => window.open("https://trusteel.lovable.app/", "_blank")}
+                style={{ 
+                  backgroundColor: '#3b82f6', color: 'white', padding: '0.75rem 1.5rem', 
+                  borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 600,
+                  fontSize: '1rem', width: '100%'
+                }}
+              >
+                📱 알림톡 디자인 미리보기 (새창 열기)
+              </button>
+              <p style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '0.5rem' }}>
+                실제 기사님께 전송될 알림톡 화면을 새 창에서 확인하실 수 있습니다.
+              </p>
             </div>
 
             {/* 입력 내용 요약 (수신자용 공개 항목만) */}
